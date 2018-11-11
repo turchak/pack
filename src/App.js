@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import './App.css';
+import './App.sass';
 
 type Props = {};
 
@@ -10,7 +10,7 @@ type State = {
 
 class App extends  Component<Props, State> {
   state = {
-    name: 'sergey',
+    name: 'Hello',
   }
   render() {
     const { name } = this.state;
