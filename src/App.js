@@ -1,9 +1,11 @@
 // @flow
 import * as React from 'react';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import { Layout } from 'antd';
+// import Header from './Components/Header';
+// import Footer from './Components/Footer';
 import Button from 'antd/lib/button';
 import './App.sass';
+const { Content, Header, Footer } = Layout;
 
 type Props = {};
 
@@ -18,11 +20,12 @@ class App extends  React.Component<Props, State> {
   render() {
     const { name } = this.state;
     return (
-      <div>
+      <React.Fragment>
         <Header />
-        <Button type="primary">Button</Button>
+        
+        <Content>Hello</Content>
         <Footer />  
-      </div>
+      </React.Fragment>
     );
   }
 }
