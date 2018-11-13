@@ -1,5 +1,8 @@
 // @flow
-import React, { Component } from 'react';
+import * as React from 'react';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Button from 'antd/lib/button';
 import './App.sass';
 
 type Props = {};
@@ -8,15 +11,17 @@ type State = {
   name: string
 };
 
-class App extends  Component<Props, State> {
+class App extends  React.Component<Props, State> {
   state = {
     name: 'Hello',
   }
   render() {
     const { name } = this.state;
     return (
-      <div className="App">
-        {name}
+      <div>
+        <Header />
+        <Button type="primary">Button</Button>
+        <Footer />  
       </div>
     );
   }
