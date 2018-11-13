@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { Layout } from 'antd';
-// import Header from './Components/Header';
+import HeaderMenu from './Components/HeaderMenu';
 // import Footer from './Components/Footer';
 import Button from 'antd/lib/button';
 import './App.sass';
@@ -21,10 +21,12 @@ class App extends  React.Component<Props, State> {
     const { name } = this.state;
     return (
       <React.Fragment>
-        <Header />
-        
+        <Header className="header">
+          <HeaderMenu />
+        </Header>
         <Content>Hello</Content>
-        <Footer />  
+        <Footer />
+
       </React.Fragment>
     );
   }
