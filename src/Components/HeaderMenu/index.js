@@ -23,6 +23,10 @@ class HeaderMenu extends Component {
             onClick={this.handleClick}
             selectedKeys={[this.state.current]}
             mode="horizontal"
+    
+            style={{
+              flexGrow: 1
+            }}
           >
             <Menu.Item key="about">
                 <Icon type="exclamation-circle" theme="twoTone" />About us
