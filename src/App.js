@@ -15,11 +15,7 @@ type Props = {};
 type State = {};
 
 class App extends  React.Component<Props, State> {
-  state = {
-    name: 'Hello',
-  }
   render() {
-    const { name } = this.state;
     return (
       <React.Fragment>
         <Header className="header">
