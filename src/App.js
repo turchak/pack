@@ -23,8 +23,7 @@ class App extends  React.Component<Props, State> {
           <HeaderMenu />
         </Header>
         <Content>Hello</Content>
-        <Footer />
-
+        <Footer className="footer">2018</Footer>
       </React.Fragment>
     );
   }

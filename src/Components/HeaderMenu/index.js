@@ -25,7 +25,10 @@ class HeaderMenu extends Component {
             mode="horizontal"
     
             style={{
-              flexGrow: 1
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'flex-end',
+              flexGrow: 1,
             }}
           >
             <Menu.Item key="about">
