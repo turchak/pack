@@ -3,6 +3,7 @@ import * as React from 'react';
 import { Layout } from 'antd';
 import HeaderMenu from './Components/HeaderMenu';
 import Logo from './Components/Logo';
+import Сalculator from './Components/Сalculator/';
 // import Footer from './Components/Footer';
 import Button from 'antd/lib/button';
 import './App.sass';
@@ -22,7 +23,7 @@ class App extends  React.Component<Props, State> {
           <Logo />
           <HeaderMenu />
         </Header>
-        <Content>Hello</Content>
+        <Content><Сalculator /></Content>
         <Footer className="footer">2018</Footer>
       </React.Fragment>
     );
