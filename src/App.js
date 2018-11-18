@@ -23,7 +23,9 @@ class App extends  React.Component<Props, State> {
           <Logo />
           <HeaderMenu />
         </Header>
-        <Content><Сalculator /></Content>
+        <Content className="main">
+          <Сalculator />
+        </Content>
         <Footer className="footer">2018</Footer>
       </React.Fragment>
     );
