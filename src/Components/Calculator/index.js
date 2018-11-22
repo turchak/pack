@@ -48,9 +48,18 @@ class Calculator extends React.Component<Props, State> {
                 price: {
                     a5: 0.95,
                     a4: 1.3,
-                    a3: 1.8,
-                    a3plus: 2.3,
+                    a3: 1.85,
+                    a3plus: 2.35,
                     a2: 3.5,
+                }
+            },
+            largeAmount: {
+                price: {
+                    a5: 0.9,
+                    a4: 1.2,
+                    a3: 1.7,
+                    a3plus: 2.2,
+                    a2: 3.25,
                 }
             }
         })
