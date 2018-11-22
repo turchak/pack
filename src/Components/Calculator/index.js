@@ -3,7 +3,7 @@ import React from 'react';
 
 
 type State = {
-    smallAmount: {
+        smallAmount: {
             price: {
                 a5: number,
                 a4: number,
@@ -20,7 +20,16 @@ type State = {
                 a3plus: number,
                 a2: number,
             } | null,
-        };
+        },
+        largeAmount: {
+            price: {
+                a5: number,
+                a4: number,
+                a3: number,
+                a3plus: number,
+                a2: number,
+            } | null,
+        }
     } 
 
 type Props = {};
@@ -30,6 +39,7 @@ class Calculator extends React.Component<Props, State> {
     state = {
         smallAmount: null,
         mediumAmount: null,
+        largeAmount: null,
     }
 
     componentDidMount() {
@@ -66,11 +76,18 @@ class Calculator extends React.Component<Props, State> {
     }
 
     render(): React.Node {
-        return (
-            <div>
-                Calculator
-            </div>
-        );
+        const { smallAmount, mediumAmount, largeAmount } = this.state;
+        if (smallAmount && mediumAmount && largeAmount) {
+            return (
+                <div>
+                    <ul>
+                        <li>A5: {smallAmount.price.a5}</li>
+                    </ul>
+                </div>
+            );
+        }
+        return null
+        
     }
 }
 
